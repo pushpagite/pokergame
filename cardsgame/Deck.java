@@ -13,7 +13,7 @@ public class Deck {
 
 	}
 
-	// fills the card
+	// fills the card and to the List of Cards
 	public void fillCard() {
 
 		for (Suit suit : Suit.values()) {

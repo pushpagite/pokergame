@@ -11,7 +11,7 @@ public enum Priority {
 	// Private fields
 	private final int rankValue;
 
-	// Constructor
+	// Assigns the priority 
 	private Priority(int rankValue) {
 		this.rankValue = rankValue;
 	}

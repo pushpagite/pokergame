@@ -7,18 +7,18 @@ public class Player {
 	boolean isSameColor;
 	boolean isSameNumber;
 	int point;
-	
-	Card inHandCard[]=new Card[3];
 
+	// Empty array for cards in hand of the player
+	Card inHandCard[] = new Card[3];
+
+	// Assigning the Player name
 	public Player(String playerName) {
 		this.playerName = playerName;
 	}
-	
-	//method for displaying card
-	public void showInhandCard()
-	{
-		for(int i=0;i<inHandCard.length;i++)
-		{
+
+	// Shows Cards in hand of the Player
+	public void showInhandCard() {
+		for (int i = 0; i < inHandCard.length; i++) {
 			System.out.println(inHandCard[i]);
 		}
 	}

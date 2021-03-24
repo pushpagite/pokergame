@@ -9,7 +9,7 @@ public class GameApplication {
 
 		Scanner scanner = new Scanner(System.in);
 
-		// takes the no of player from user
+		// Takes the no of player from user
 		System.out.println("how many players you want ? ");
 		int noOfPlayers = scanner.nextInt();
 		Player player[] = new Player[noOfPlayers];
@@ -44,7 +44,7 @@ public class GameApplication {
 			}
 		}
 
-		//call checkWinner method
+		// call checkWinner method to decide the winner
 		new DecideWinner().checkWinner(player);
 
 	}

@@ -50,10 +50,13 @@ public class DecideWinner {
 	public Player[] selectMode(Player PlayerArr[]) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("1.Any Card Joker \n2.Low Card Joker \n3.High Card Joker");
+		
+		//Get the Mode From user
 		System.out.println("Please select mode");
 		int mode = sc.nextInt();
 		switch (mode) {
 		case 1:
+			//Any Card Joker Mode
 			for (int i = 0; i < PlayerArr.length; i++) {
 				System.out.println("hello " + PlayerArr[i].playerName + " your turn ");
 				PlayerArr[i].showInhandCard();
@@ -63,7 +66,8 @@ public class DecideWinner {
 
 			}
 			break;
-		case 2:
+		case 2: 
+			//Low Card Joker Mode
 			System.out.println("you have enterd  Low Card Joker mode");
 			for (int i = 0; i < PlayerArr.length; i++) {
 				System.out.println("hello " + PlayerArr[i].playerName + " your turn ");
@@ -157,7 +161,7 @@ public class DecideWinner {
 	}
 
 	
-	// Checking Same Color
+	// Checking Same Color of the cards
 	public boolean checkSameColor(Player playerArr[]) {
 		boolean flag = true;
 		for (Player player : playerArr) {
@@ -186,7 +190,7 @@ public class DecideWinner {
 			al.add(card.getValue());
 		}
 
-		System.out.println(al);
+		//System.out.println(al);
 		flag = true;
 		for (int i = 0; i < 2; i++) {
 
@@ -200,5 +204,7 @@ public class DecideWinner {
 		return flag;
 
 	}
+	
+	
 
 }

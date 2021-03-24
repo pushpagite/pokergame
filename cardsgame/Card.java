@@ -6,7 +6,7 @@ public class Card {
 	private Priority priority;
 	private int value;
 
-	// Constructor
+	// assigning the value to the cards through constructor
 	public Card(Priority priority, Suit suit, int value) {
 		this.priority = priority;
 		this.suit = suit;
@@ -60,7 +60,7 @@ public class Card {
 	 */
 	@Override
 	public String toString() {
-		return "Card [suit=" + suit + ", priority=" + priority + ", value=" + value + "]";
+		return "suit=" + suit + ", priority=" + priority + ", value=" + value + "]";
 	}
 
 }// end Card
